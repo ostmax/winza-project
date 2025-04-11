@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение CSS файла -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Иконки Font Awesome -->
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <img src="img/logo.png" alt="Логотип">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Главные Розыгрыши</a></li>
+                    <li><a href="#">Связаться с Нами</a></li>
+                    <li><a href="#">Информация</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <i class="fas fa-user"></i> <span id="userName"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Добро пожаловать на Дашборд</h1>
+    </div>
+
+    <footer>
+        <p>© 2025 Все права защищены.</p>
+    </footer>
+
+    <script>
+        document.getElementById("userName").innerText = localStorage.getItem("username");
+    </script>
+</body>
+
+</html>

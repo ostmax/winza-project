@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #1E1E1E;
+    padding: 0; /* Убираем лишние отступы */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Ограничиваем ширину шапки */
+    margin: 0 auto; /* Центрируем шапку */
+    width: 100%; /* Заставляем занимать всю ширину */
+}
+
+.logo {
+    margin-right: 10px; /* Небольшой отступ справа от логотипа */
+}
+
+.logo img {
+    height: 140px; /* Размер логотипа */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0; /* Убираем отступы между элементами меню */
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px; /* Добавлен отступ для кнопок */
+    border-radius: 4px; /* Закругление углов */
+    transition: background 0.3s; /* Плавный переход фона */
+}
+
+.menu a:hover {
+    background-color: #FFC83D; /* Фон при наведении */
+    color: #000; /* Цвет текста при наведении */
+}
+
+.auth-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px; /* Уменьшение размера иконки */
+    cursor: pointer;
+    padding: 5px 10px; /* Размеры аналогичные кнопкам */
+    display: flex; /* Центрирование внутри кнопки */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+.auth-btn:hover {
+    color: #FFC83D;
+}
+
+.hero {
+    background: linear-gradient(120deg, #1E1E1E, #2C2C2C);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.participate-btn {
+    margin-top: 10px;
+    background: #FFC83D;
+    color: #000;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.participate-btn:hover {
+    background-color: #e6b236;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #1C1C1E;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    color: #FFF;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2B2B2D;
+    color: #fff;
+}
+
+.modal-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFC83D;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    background-color: #e6b236;
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
